@@ -42,10 +42,61 @@
 
     echo "<br>";
 
-    if($cislo1 != $cislo2){
+    if($cislo1 == $cislo2){
         echo "Tento kod sa nevykona";
     } else {
         echo "Tento kod sa vykona";
+    }
+
+    //Uloha na precvicenie si podmienok.
+    /*
+    Vytvorte podmienku ktora bude na zaklade poctu bodov vypisovat vase hodnotenie.
+
+    100 - 90 bodov: 1
+    89 - 80 bodov: 2
+    */
+    
+    $pocetBodov = random_int(0, 100);
+
+    if($pocetBodov >= 90){
+        echo "1";
+    } elseif($pocetBodov >= 80){
+        echo "2";
+    } elseif($pocetBodov >= 70){
+        echo "3";
+    } elseif($pocetBodov >= 60){
+        echo "4";
+    } else {
+        echo "5";
+    }
+    //Uloha na precvicenie si podmienok 2.
+    /*
+    Vstup na party
+    Vstup na party je podmienny niekolkymi podmienkami
+
+    1. Podmienka: Vstup na party je od 18 rokov
+    2. Podmienka: Pokial je party v SNV, tak od 15 rokov
+    3. Podmienka: Ak nemate slusne oblecenie, tak smola
+    4. Podmienka: Ak si bol v base, tak mas zakaz vstupu na party
+    5. Podmienka: Ak mate suhlas zakonneho zastupcu, mozete vstupit na oparty od 10 rokov
+    */
+
+    $mojVek = 31;
+    $miestoParty = "Poprad";
+    $slusneOblecnie = true;
+    $suhlasZakonnehoZastupcu = true;
+    $somVBase = false;
+    if($suhlasZakonnehoZastupcu == true && $somVBase == false){
+        if($mojVek >= 18){
+            echo "Go party!";
+        } elseif($mojVek >= 15 && $miestoParty == "SNV"){
+            echo "Go party!";
+        } elseif($mojVek >= 10 && $suhlasZakonnehoZastupcu == true){
+            echo "Go party!";
+        } else {
+            echo "No party for you!";
+        }
+
     }
 
     ?>

@@ -30,7 +30,7 @@
 
     $cislo1 = 4.3;
     $cislo2 = 2.7;
-
+    
     //pretypovanie cisel z float na int
     $vysledok = (int)($cislo1) + (int)$cislo2;
     echo $vysledok;
