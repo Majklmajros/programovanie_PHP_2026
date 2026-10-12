@@ -36,7 +36,7 @@
     (2 === 2): Pravy, (2 !== "2"): Nepravda
     */
 
-    if(cislo1 != cislo2){
+    if($cislo1 != $cislo2){
         echo "Toto sa vykona";
     }
 
@@ -55,6 +55,9 @@
     100 - 90 bodov: 1
     89 - 80 bodov: 2
     */
+
+    echo "<br>";
+
     
     $pocetBodov = random_int(0, 100);
 
@@ -80,6 +83,8 @@
     4. Podmienka: Ak si bol v base, tak mas zakaz vstupu na party
     5. Podmienka: Ak mate suhlas zakonneho zastupcu, mozete vstupit na oparty od 10 rokov
     */
+
+    echo "<br>";
 
     $mojVek = 31;
     $miestoParty = "Poprad";
